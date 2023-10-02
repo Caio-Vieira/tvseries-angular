@@ -46,5 +46,8 @@ ng serve -o
 <br>
 
 
+<img align="center" alto="Caio-traler"  height="600"  width="1000" src="https://github.com/Caio-Vieira/tvseries-angular.ts/assets/129814574/e9e72587-e37e-4ba5-a45a-f960095fc359">
+<br>
 <img align="center" alto="Caio-traler"  height="600"  width="1000" src=" ">
+
 
