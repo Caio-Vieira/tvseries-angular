@@ -57,5 +57,7 @@ ng serve -o
 
 <img align="center" alto="Caio-page-serie" height="600"  width="400" src="https://github.com/Caio-Vieira/tvseries-angular.ts/assets/129814574/1cef40f6-d133-47c6-a6a2-64318bc0e655">
 
+<img align="center" alto="Caio-page-serie" height="600"  width="400" src="https://github.com/Caio-Vieira/tvseries-angular.ts/assets/129814574/8ff3957c-6800-4fcd-a69c-714a60e821a6">
+
 
 
