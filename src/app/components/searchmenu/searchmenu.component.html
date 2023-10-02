@@ -1,0 +1,155 @@
+<nav class="sticky top-0">
+  <ul class="h-[265px] bg-pink-700">
+    <div class="flex justify-between">
+      <div class="flex flex-row gap-2 ml-10 mt-10">
+        <div class="flex flex-row">
+          <p class="italic text-gray-50 text-4xl">T</p>
+          <ng-icon
+            class="py-4"
+            size="20px"
+            color="#ffff"
+            name="bootstrapTv"
+          ></ng-icon>
+        </div>
+        <p class="italic text-gray-50 text-4xl">Series</p>
+      </div>
+      <div class="flex gap-2 mt-2 mr-6">
+        <ng-icon
+          class="cursor-pointer"
+          size="18px"
+          color="#ffff"
+          name="bootstrapFacebook"
+        ></ng-icon>
+        <ng-icon
+          class="cursor-pointer"
+          size="18px"
+          color="#ffff"
+          name="bootstrapInstagram"
+        ></ng-icon>
+        <ng-icon
+          class="cursor-pointer"
+          size="20px"
+          color="#ffff"
+          name="bootstrapYoutube"
+        ></ng-icon>
+      </div>
+    </div>
+    <div class="relative">
+      <form
+        (submit)="searchResults()"
+        class="ml-12 flex flex-row content-center absolute inset-x-0 top-[60px] gap-2"
+      >
+        <input
+          class="p-[12px] w-5/12 h-7 border border-white bg-transparent outline-none rounded-[5px]"
+          type="text"
+          [(ngModel)]="query"
+          name="query"
+          placeholder="Buscar Series"
+        />
+        <button
+          class="hover:bg-red-900/50 w-16 h-7 border border-white bg-transparent rounded-[5px] text-white"
+          type="submit"
+        >
+          <ng-icon class="py-1" color="#ffff" name="octSearch"></ng-icon>
+        </button>
+      </form>
+    </div>
+    <div class="grid grid-flow-col justify-stretch py-36">
+      <div class="h-9 text-center py-1">
+        <a
+          (click)="clear()"
+          class="nav-link"
+          [routerLink]="['/']"
+          routerLinkActive="active-link active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Faroeste</a
+        >
+      </div>
+      <div class="text-center py-1">
+        <a
+          (click)="clear()"
+          class="nav-link"
+          [routerLink]="['/popular']"
+          routerLinkActive="active-link active"
+          >Popular</a
+        >
+      </div>
+      <div class="text-center py-1">
+        <a
+          (click)="clear()"
+          class="nav-link"
+          [routerLink]="['/animations']"
+          routerLinkActive="active-link active"
+          >Animação</a
+        >
+      </div>
+      <div class="text-center py-1">
+        <a
+          (click)="clear()"
+          class="nav-link"
+          [routerLink]="['/family']"
+          routerLinkActive="active-link active"
+          >familia</a
+        >
+      </div>
+    </div>
+  </ul>
+</nav>
+<div class="posters sticky top-0">
+  <div class="sticky top-0 flex justify-center h-[300px] bg-pink-700">
+    <div class="mt-6 flex flex-row justify-center gap-2">
+      <div class="shrink w-1/5">
+        <img
+          class="origin-center rotate-12 bg-black shadow-lg shadow-black/60"
+          src="https://image.tmdb.org/t/p/w200//oAbCE44r6wtmAnfzZI2SxyeaBmW.jpg"
+        />
+      </div>
+      <div class="shrink w-1/5">
+        <img
+          class="origin-center rotate-12 bg-black shadow-lg shadow-black/60"
+          src="https://www.themoviedb.org/t/p/w200/zNNFg8z3z7uT817n6M0kHRcYwq1.jpg"
+        />
+      </div>
+      <div class="shrink w-1/5">
+        <img
+          class="origin-center rotate-12 bg-black shadow-lg shadow-black/60"
+          src="https://image.tmdb.org/t/p/w200//j28XGzAhvJNGWEHbYrzvREw7kKd.jpg"
+        />
+      </div>
+      <div class="shrink w-1/5">
+        <img
+          class="origin-center rotate-12 bg-black shadow-lg shadow-black/60"
+          src="https://image.tmdb.org/t/p/w200//sUB4lZghNnwQywKqgjIfJsyBqI2.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-slate-200 py-4 text-3xl text-center font-extrabold">
+  <span
+    class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+  >
+    Resultados para serie {{ query }}
+  </span>
+</div>
+<div class="bg-slate-200 pt-2" *ngIf="series.length > 0">
+  <div
+    class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8"
+  >
+    <div class="grid justify-items-center pb-2" *ngFor="let serie of series">
+      <img
+        class="w-3/5 bg-red-950 shadow-lg shadow-red-950/60"
+        src="https://image.tmdb.org/t/p/w200/{{ serie.poster_path }}"
+      />
+      <a [routerLink]="['/details', serie.id]">
+        <div class="mt-1 text-xl text-center font-extrabold">
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+          >
+            Detalhes
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+/.angular/cache
+
+# Node
+/node_modules
+
+#mist
+/src/environments/environment.development.ts
+
+
+
+

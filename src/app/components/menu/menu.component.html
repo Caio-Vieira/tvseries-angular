@@ -1,0 +1,101 @@
+<nav class="sticky top-0">
+  <ul class="h-[265px] bg-pink-700 border-2 border-gray-800/30">
+    <div class="flex justify-between">
+      <div class="flex flex-row gap-2 ml-10 mt-10">
+        <div class="flex flex-row">
+          <p class="italic text-gray-50 text-4xl">T</p>
+          <ng-icon
+            class="py-4"
+            size="20px"
+            color="#ffff"
+            name="bootstrapTv"
+          ></ng-icon>
+        </div>
+        <p class="italic text-gray-50 text-4xl">Series</p>
+      </div>
+      <div class="flex gap-2 mt-2 mr-6">
+        <ng-icon
+          class="cursor-pointer"
+          size="17px"
+          color="#ffff"
+          name="bootstrapFacebook"
+        ></ng-icon>
+        <ng-icon
+          class="cursor-pointer"
+          size="17px"
+          color="#ffff"
+          name="bootstrapInstagram"
+        ></ng-icon>
+        <ng-icon
+          class="cursor-pointer"
+          size="19px"
+          color="#ffff"
+          name="bootstrapYoutube"
+        ></ng-icon>
+      </div>
+    </div>
+
+    <div class="grid grid-flow-col justify-stretch py-28">
+      <div class="h-9 text-center py-1">
+        <li>
+          <a
+            (click)="clear()"
+            class="nav-link"
+            [routerLink]="['/']"
+            routerLinkActive="active-link active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Faroeste</a
+          >
+        </li>
+      </div>
+      <div class="text-center py-1">
+        <li>
+          <a
+            (click)="clear()"
+            class="nav-link"
+            [routerLink]="['/popular']"
+            routerLinkActive="active-link active"
+            >Popular</a
+          >
+        </li>
+      </div>
+      <div class="h-9 text-center border border-b-gray-50 rounded-[5px] py-1">
+        <div class="flex justify-center gap-1">
+          <li>
+            <a
+              (click)="clear()"
+              class="nav-link"
+              [routerLink]="['/search']"
+              routerLinkActive="active-link active"
+            >
+              <ng-icon class="py-1" color="#ffff" name="octSearch"></ng-icon
+            ></a>
+          </li>
+        </div>
+      </div>
+
+      <div class="text-center py-1">
+        <li>
+          <a
+            (click)="clear()"
+            class="nav-link"
+            [routerLink]="['/animations']"
+            routerLinkActive="active-link active"
+            >Animação</a
+          >
+        </li>
+      </div>
+      <div class="text-center py-1">
+        <li>
+          <a
+            (click)="clear()"
+            class="nav-link"
+            [routerLink]="['/family']"
+            routerLinkActive="active-link active"
+            >familia</a
+          >
+        </li>
+      </div>
+    </div>
+  </ul>
+</nav>
