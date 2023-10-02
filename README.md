@@ -1,4 +1,4 @@
-# Seriestv
+# Series
 <h3> Welcome to my repository.</h3>
 <h4>This project was developed with angular/ts and to apply styles or tailwindcss design</h4>
 <h4>It consumes Tmdb Api rendered four list of series already defined a detail page with the poster of the actors of the series, plus a page for series research</h4>
@@ -46,5 +46,5 @@ ng serve -o
 <br>
 
 
-<img align="center" alto="Caio-traler"  height="500"  width="278" src="https://github.com/Caio-Vieira/movie_site/assets/129814574/a9604f5c-54bb-496c-ae2d-605216dd2d29">
+<img align="center" alto="Caio-traler"  height="600"  width="1000" src=" ">
 
