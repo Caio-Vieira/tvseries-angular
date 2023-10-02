@@ -59,7 +59,7 @@ ng serve -o
 
 <div display= "flex" align="center">
 <img align="center" alto="Caio-page-serie"  height="500" width="278" src="https://github.com/Caio-Vieira/tvseries-angular.ts/assets/129814574/3a23adc4-604f-4ac0-ba80-e8e9f4f2c2f9">  
-<img align="center" alto="Caio-page-serie"  height="500"  width="278" src="https://github.com/Caio-Vieira/movie_site/assets/129814574/e41eff40-538b-4a81-b7c4-3eccf7bb4964">
+<img align="center" alto="Caio-page-serie"  height="500"  width="278" src="https://github.com/Caio-Vieira/tvseries-angular.ts/assets/129814574/9f89141a-fb55-48d3-8724-bb1e36fac72d">
 </div>
 
 
