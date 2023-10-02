@@ -43,4 +43,8 @@ ng serve -o
 
 
 ````
+<br>
+
+
+<img align="center" alto="Caio-traler"  height="500"  width="278" src="https://github.com/Caio-Vieira/movie_site/assets/129814574/a9604f5c-54bb-496c-ae2d-605216dd2d29">
 
