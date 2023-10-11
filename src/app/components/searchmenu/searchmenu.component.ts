@@ -25,4 +25,7 @@ export class SearchmenuComponent {
     this.query = '';
     this.series = [];
   }
+   clearInput() {
+    this.query = '';
+  }
 }
