@@ -23,6 +23,7 @@ import {
   bootstrapStarHalf,
   bootstrapStars,
   bootstrapAward,
+  bootstrapXLg
 } from '@ng-icons/bootstrap-icons';
 import { DetailsComponent } from './pages/details/details.component';
 
@@ -54,6 +55,7 @@ import { DetailsComponent } from './pages/details/details.component';
       bootstrapStarHalf,
       bootstrapStars,
       bootstrapAward,
+      bootstrapXLg
     }),
   ],
   providers: [],
