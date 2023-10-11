@@ -37,20 +37,26 @@
     <div class="relative">
       <form
         (submit)="searchResults()"
-        class="ml-12 flex flex-row content-center absolute inset-x-0 top-[60px] gap-2"
+        class="w-2/5 ml-12 flex flex-row content-center absolute inset-x-0 top-[60px] gap-1  border border-white"
       >
         <input
-          class="p-[12px] w-5/12 h-7 border border-white bg-transparent outline-none rounded-[5px]"
+          class="p-[8px] h-7 w-full  bg-transparent outline-none rounded-[5px]"
           type="text"
           [(ngModel)]="query"
           name="query"
           placeholder="Buscar Series"
         />
+          <ng-icon (click)="clearInput()"class="mt-2 cursor-pointer"
+            size="13px"
+            color="#ffff"
+            name="bootstrapXLg"></ng-icon>
+
+
         <button
-          class="hover:bg-red-900/50 w-16 h-7 border border-white bg-transparent rounded-[5px] text-white"
+          class="w-8 h-7 mr-1 bg-transparent rounded-[5px] text-white"
           type="submit"
         >
-          <ng-icon class="py-1" color="#ffff" name="octSearch"></ng-icon>
+          <ng-icon class="py-1" color="#ffff" size="18px" name="octSearch"></ng-icon>
         </button>
       </form>
     </div>
